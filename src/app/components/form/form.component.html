@@ -16,8 +16,8 @@
             </div>
             <div class="time_container">
                 <div class="time_input_container">
-                    <input type="radio" formControlName="hour" name="hour" value="after">
-                    <label for="after">Tarde</label>
+                    <input type="radio" formControlName="hour" name="hour" value="afternoon">
+                    <label for="afternoon">Tarde</label>
                 </div>
                 <div class="time_text_container">
                     <p>12:01 às 18:00</p>
@@ -38,7 +38,7 @@
                     <label for="showClosed">Exibir unidades fechadas</label>
                 </div>
                 <div class="time_text_container">
-                    <p>Resultados encontrados: <span>{{filterResults.length}}</span></p>
+                    <p>Resultados encontrados: <span>{{filteredResults.length}}</span></p>
                 </div>
             </div>
             <div class="time_button_container">
@@ -46,7 +46,7 @@
                     <button type="button" class="color-yellow" (click)="onSubmit()">ENCONTRAR UNIDADE</button>
                 </div>
                 <div>
-                    <button type="button" class="color-w" (click)="onClear()">LIMPAR</button>
+                    <button type="button" class="color-w" (click)="onClean()">LIMPAR</button>
                 </div>
             </div>
         </div>
