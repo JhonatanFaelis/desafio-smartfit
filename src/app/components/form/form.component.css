@@ -41,6 +41,7 @@
 
 .time_button_container{
     display: flex;
+    flex-wrap: wrap;
     width: 70%;
     margin: auto;   
     justify-content: center;
@@ -50,6 +51,7 @@
 .time_button_container button{
     display: flex;
     justify-content: center;
+    
     align-items: center;
     padding: 1rem 3rem;
     width: 20rem;
@@ -69,3 +71,10 @@
     background-color: white;
     border: 1px solid #80808096;
 }
+
+
+@media screen and (max-width: 600px) {
+    .container_button{
+        width: 100%;
+    }
+  }

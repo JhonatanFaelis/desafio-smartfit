@@ -1,0 +1,23 @@
+.container_geral{
+    
+    margin: auto;
+    
+}
+
+.card-ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 2rem;
+    justify-content: space-around;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+@media screen and (max-width: 600px) {
+    .card-ul{
+        width: 100%;
+        justify-content: space-around;
+    }
+  }

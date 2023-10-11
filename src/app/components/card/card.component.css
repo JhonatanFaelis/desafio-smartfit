@@ -1,0 +1,67 @@
+.card_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+    padding: 1rem;
+    margin-top: 3rem;
+    width: 280px;
+    height: 400px;
+
+    background-color: #F5F5F5;
+    border-radius: 4px;
+    -webkit-box-shadow: 7px 7px 11px -6px rgba(0,0,0,0.43);
+    -moz-box-shadow: 7px 7px 11px -6px rgba(0,0,0,0.43);
+    box-shadow: 7px 7px 11px -6px rgba(0,0,0,0.43);
+}
+
+p{
+    font-size: 0.8rem;
+    color: #bbbaba;
+}
+
+span{
+    font-weight: 800;
+    font-size: 0.8rem;
+    color: red;
+}
+
+span.opened{
+    font-weight: 800;
+    font-size: 0.8rem;
+    color: green;
+}
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+li{
+    display: flex;
+    flex-direction: column;
+    list-style: none;  
+    
+}
+
+li b{
+    font-size: 1rem;
+    
+}
+
+img{
+    width: 4rem;
+    height: 4rem;
+    margin-right: 0.3rem;
+}
+
+.container_ul_hours{
+    display: flex;
+    gap: 2rem;
+}
+
+h1{
+    font-size: 1.3rem;
+}

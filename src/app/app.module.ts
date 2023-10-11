@@ -8,6 +8,9 @@ import { FormComponent } from './components/form/form.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { FormBuilder, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { CardsListComponent } from './components/cards-list/cards-list.component';
+import { CommonModule } from '@angular/common';
+import { CardComponent } from './components/card/card.component';
 
 
 @NgModule({
@@ -15,14 +18,17 @@ import { HttpClientModule } from '@angular/common/http';
     AppComponent,
     HeaderComponent,
     FormComponent,
-    FooterComponent
+    FooterComponent,
+    CardsListComponent,
+    CardComponent
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

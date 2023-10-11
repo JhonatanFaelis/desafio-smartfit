@@ -12,7 +12,9 @@ export class UnitsService {
   
   readonly urlApi =  'https://test-frontend-developer.s3.amazonaws.com/data/locations.json';
 
+  //uma prop que podemos observar de acordo com as mudançs dela
   private allUnitsSubject: BehaviorSubject<Location[]> = new BehaviorSubject<Location[]>([]);
+  //vai ser um obj observable, para notificar os valores que mudarem.
   private allUnits$: Observable<Location[]> = this.allUnitsSubject.asObservable();
   private filteredUnits: Location[] = [];
 

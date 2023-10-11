@@ -1,5 +1,5 @@
 import { LocationStrategy } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { FilterUnitsService } from 'src/app/services/filter-units.service';
 import { UnitsService } from 'src/app/services/units.service';
@@ -13,6 +13,8 @@ import {UnitsResponse} from 'src/app/types/units-response.interface'
   styleUrls: ['./form.component.css']
 })
 export class FormComponent implements OnInit{
+  //criar o output para mandar o evento para o app e pegar em outro component.
+  @Output() submitEvent = new EventEmitter();
   results : Location[]  = []
   filteredResults : Location[]  = [];
   formGroup! : FormGroup;
@@ -41,7 +43,7 @@ export class FormComponent implements OnInit{
       this.filteredResults = this.filterUnitsService.filter(this.results, showClosed, hour);
       this.unitService.setFilteredUnits(this.filteredResults);
 
-      // this.submitEvent.emit();
+      this.submitEvent.emit();
     }
 
     onClean(): void {
