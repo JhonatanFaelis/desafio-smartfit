@@ -9,7 +9,7 @@
             <h1>{{ card.title }}</h1>
         </div>      
             <p [innerHTML]="card.content"> </p>
-        <ul>
+        <ul class="container_ul_img">
             <img *ngIf="card.mask" [src]="'/assets/img/' + card.mask + '-mask.png'"/>
             <img *ngIf="card.towel" [src]="'/assets/img/' + card.towel + '-towel.png'"/>
             <img  *ngIf="card.foutain" [src]="'/assets/imgpng/' + card.foutain + '-fountain.png'"/>

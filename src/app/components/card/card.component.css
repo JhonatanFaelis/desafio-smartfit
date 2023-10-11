@@ -35,6 +35,7 @@ span.opened{
 
 ul{
     display: flex;
+    
     flex-wrap: wrap;
     width: 100%;
 }
@@ -60,6 +61,10 @@ img{
 .container_ul_hours{
     display: flex;
     gap: 2rem;
+}
+
+.container_ul_img{
+    justify-content: space-between;
 }
 
 h1{
